@@ -1,0 +1,114 @@
+@import "../../assets/less/base";
+.user-icon{
+  position: fixed;
+  top: 50px;
+  width: 100%;
+  text-align: center;
+  img{
+    width: 130px;
+    height: 130px;
+    opacity: 0.8;
+    .borRadius(50%)
+  }
+}
+.login-wrapper{
+  position: fixed;
+  top: 260px;
+  width: 100%;
+  text-align: center;
+  .name,.password{
+    width: 230px;
+    height: 30px;
+    background-color: transparent;
+    border: 1px solid #1890FF;
+    .borRadius(5px);
+    outline: none;
+    text-indent: 10px;
+    color: #1890FF;
+  }
+  .password{
+    margin-top: 16px;
+  }
+  .login-btn,.register-btn{
+    width: 230px;
+    height: 44px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    font-family: "Agency FB";
+    .borRadius(8px);
+    &:active{
+      opacity: 0.8;
+    }
+  }
+  .login-btn{
+    margin-top: 60px;
+    background-color: #1890FF;
+  }
+  .register-btn{
+    margin-top: 16px;
+    background-color: #6CFF1D;
+  }
+}
+.register-wrapper{
+  position: fixed;
+  top: 260px;
+  width: 100%;
+  .item-wrapper{
+    margin-top: 10px;
+    text-align: center;
+    label{
+      margin-right: 16px;
+      color: #1890FF;
+      font-size: 18px;
+    }
+    .input-item{
+      width: 200px;
+      height: 30px;
+      background-color: transparent;
+      border: 1px solid #1890FF;
+      .borRadius(5px);
+      outline: none;
+      text-indent: 10px;
+      color: #1890FF;
+    }
+    .radio-item{
+      width: 200px;
+      height: 16px;
+      border: 1px solid #1890FF;
+      opacity: 0.8;
+    }
+    .radio-item:checked{
+      background-color: #1890FF;
+      padding: 3px;
+      background-clip: content-box;
+    }
+    .register-btn{
+      width: 280px;
+      margin-top: 10px;
+      height: 44px;
+      border: none;
+      outline: none;
+      font-size: 16px;
+      font-family: "Agency FB";
+      background-color:dodgerblue;
+      .borRadius(8px);
+      &:active{
+        opacity: 0.8;
+      }
+    }
+  }
+}
+.error-info{
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  .boxSize;
+  padding: 12px;
+  background-color:rgba(15,108,188,0.6) ;
+  text-align: center;
+  transform: translate(-50%,-50%);
+  color: orangered;
+  font-size: 18px;
+  .borRadius(8px)
+}
